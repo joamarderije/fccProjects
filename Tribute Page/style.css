@@ -23,8 +23,21 @@ body {
 
 #image {
     align-self: center;
+    max-width: 768px;
+}
+
+#tribute-info {
+    padding: 10px 20px;
+    text-indent: 2%;
+    text-transform: capitalize;
 }
 
 #img-caption {
     align-self: center;
+}
+
+@media screen and (max-width: 767px) {
+    #main {
+        flex-direction: column;
+    }
 }
