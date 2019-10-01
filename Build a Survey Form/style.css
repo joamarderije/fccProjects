@@ -1,5 +1,22 @@
 #flex-container {
     display: flex;
-    align-content: center;
-    flex-direction: column;
+    justify-content: center;
+}
+
+#title {
+    font-size: 3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-spacing: 0.1rem;
+}
+
+#description {
+    line-height: 1;
+    font-size: 1.5em;   
+}
+
+#survey-form {
+    display: flex;
+    flex-direction: column;   
+    align-self: flex-end;
+     
 }
