@@ -5,45 +5,48 @@
      <title>Build a Survey Form</title>
  </head>
  <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">Come on answer this quick survey</p>
+    
      <main id="flex-container">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Come on answer this quick survey</p>
       <form id="survey-form">
-          <div>
-            <label for="name-label">Name:</label>
+          <div class="survey-form-control">
+            <label class="survey-form-control_label" for="name-label">Name:</label>
             <input type="text" id="name" placeholder="Please Enter Your Name" required>
           </div>
-          <div>
-            <label for="email-label">Email Address:</label>
+          <div class="survey-form-control">
+            <label class="survey-form-control_label" for="email-label">Email Address:</label>
             <input type="email" id="email" placeholder="Please Enter Your Email Address" required>
           </div>
-          <div>
-            <label for="number-label">Favorite Number:</label>
+          <div class="survey-form-control">
+            <label class="survey-form-control_label" for="number-label">Favorite Number:</label>
             <input type="number" id="number"  min="1" max="9" placeholder="Please Enter Your Favorite Number">
           </div>
-          <div>
-             <label for="dropdown-label">Dropdown:</label>
+          <div class="survey-form-control">
+             <label class="survey-form-control_label" for="dropdown-label">Dropdown:</label>
              <select>
                <option value=""></option>
              </select>
           </div>
-          <fieldset>
-            <legend>Gender:</legend>
+          <div class="survey-form-control">
+            <label class="survey-form-control_label">Gender:</label>
               <label for="gender"> <input type="radio" value="male" name="gender" id="gender"> Male</label>
               <label for="gender"> <input type="radio" value="female" name="gender" id="gender"> Female</label>
               <label for="gender"> <input type="radio" value="other" name="gender" id="gender"> Others</label>
-          </fieldset>
-          <fieldset>
-            <legend>Hobbies:</legend>
+          </div>
+          <div class="survey-form-control">
+            <label class="survey-form-control_label">Hobbies:</label>
               <label for="hobby"> <input type="checkbox" value="surfing" name="hobby" id="hobby"> Surfing</label>
               <label for="hobby"> <input type="checkbox" value="golfing" name="hobby" id="hobby"> Golfing</label>
               <label for="hobby"> <input type="checkbox" value="motorcross" name="hobby" id="hobby"> Motorcross</label>
-          </fieldset>
-          <div>
-              <label for="suggestion">Do you have anything to ask?</label>
+          </div>
+          <div class="survey-form-control">
+              <label class="survey-form-control_label" for="suggestion">Do you have anything to ask?</label>
               <textarea id="suggestion"></textarea>
           </div>
-          <button id="submit"> Submit </button>
+          <div class="survey-form-control">
+              <button id="submit"> Submit </button>
+          </div>
         </form>
      </main>
  </body>

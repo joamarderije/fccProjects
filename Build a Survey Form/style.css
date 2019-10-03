@@ -1,22 +1,47 @@
 #flex-container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 #title {
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     word-spacing: 0.1rem;
+    line-height: 10px;
 }
 
 #description {
-    line-height: 1;
+    line-height: 0px;
     font-size: 1.5em;   
 }
 
 #survey-form {
     display: flex;
-    flex-direction: column;   
-    align-self: flex-end;
-     
+    flex-direction: column;
+    justify-content: space-around;
+    border: 2px solid #929292;
+    padding: 15px 30px;
+    flex-wrap: nowrap; 
+    height: 80vh;
+    box-shadow: 2px 4px #929292, 2px 4px #929292, 4px 4px #929292;
+}
+
+.survey-form-control {
+    display: flex;
+    flex-direction: column;
+} 
+
+.survey-form-control_label {
+    font-weight: 600;
+    font-size: 1.1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input {
+    padding: 10px 15px;
+    margin: 10px 5px;
+    box-sizing: border-box;
 }
