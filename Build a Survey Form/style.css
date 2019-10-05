@@ -7,7 +7,7 @@
 }
 
 #title {
-    font-size: 2em;
+    font-size: 1.1em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     word-spacing: 0.1rem;
     line-height: 10px;
@@ -15,7 +15,7 @@
 
 #description {
     line-height: 0px;
-    font-size: 1.5em;   
+    font-size: .8em;   
 }
 
 #survey-form {
@@ -23,25 +23,42 @@
     flex-direction: column;
     justify-content: space-around;
     border: 2px solid #929292;
-    padding: 15px 30px;
+    padding: 15px 20px;
     flex-wrap: nowrap; 
-    height: 80vh;
+    height: 100%;
     box-shadow: 2px 4px #929292, 2px 4px #929292, 4px 4px #929292;
 }
 
 .survey-form-control {
     display: flex;
     flex-direction: column;
+    margin-top: 5px;
 } 
 
 .survey-form-control_label {
     font-weight: 600;
-    font-size: 1.1em;
+    font-size: .9em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-input {
+input[type=text], input[type=number],input[type=email], select {
     padding: 10px 15px;
     margin: 10px 5px;
     box-sizing: border-box;
+    width: 100%;
+    font-size: 0.8em;
+}
+
+#submit {
+    border: 1px solid #929292;
+    font-size: 1em;
+    border-radius: 32px;
+    padding: 10px 5px;
+    margin-top: 10px;
+    background: cornflowerblue;
+    color: #fff;
+}
+
+@media (min-width: 767px) {
+
 }

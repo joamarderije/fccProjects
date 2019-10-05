@@ -7,26 +7,20 @@
  <body>
     
      <main id="flex-container">
-        <h1 id="title">Survey Form</h1>
+        <h1 id="title">Student Personal Information Sheet</h1>
         <p id="description">Come on answer this quick survey</p>
-      <form id="survey-form">
+      <form id="survey-form" action="POST" >
           <div class="survey-form-control">
-            <label class="survey-form-control_label" for="name-label">Name:</label>
-            <input type="text" id="name" placeholder="Please Enter Your Name" required>
+            <label class="survey-form-control_label" id="name-label" for="name-label">Name:</label>
+            <input type="text" id="name"  name="name" placeholder="Please Enter Your Name" required>
           </div>
           <div class="survey-form-control">
-            <label class="survey-form-control_label" for="email-label">Email Address:</label>
-            <input type="email" id="email" placeholder="Please Enter Your Email Address" required>
+            <label class="survey-form-control_label" id="email-label" for="email-label">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Please Enter Your Email Address" required>
           </div>
           <div class="survey-form-control">
-            <label class="survey-form-control_label" for="number-label">Favorite Number:</label>
-            <input type="number" id="number"  min="1" max="9" placeholder="Please Enter Your Favorite Number">
-          </div>
-          <div class="survey-form-control">
-             <label class="survey-form-control_label" for="dropdown-label">Dropdown:</label>
-             <select>
-               <option value=""></option>
-             </select>
+            <label class="survey-form-control_label" id="number-label" for="number-label">What is you age:</label>
+            <input type="number" id="number"  name="age" min="1" max="100" placeholder="Please Enter Your Age">
           </div>
           <div class="survey-form-control">
             <label class="survey-form-control_label">Gender:</label>
@@ -35,10 +29,25 @@
               <label for="gender"> <input type="radio" value="other" name="gender" id="gender"> Others</label>
           </div>
           <div class="survey-form-control">
+             <label class="survey-form-control_label" for="dropdown-label">What course are you taking up:</label>
+             <select id="dropdown">
+               <option value="Aviation">Aviation</option>
+               <option value="Economic">Economic</option>
+               <option value="Civil Engineering">Civil Engineering</option>
+               <option value="Actuarial Science">Actuarial Science</option>
+               <option value="Computer Science">Computer Science</option>
+               <option value="Computer Engineering">Computer Engineering</option>
+               <option value="Accountancy">Accountancy</option>
+               <option value="Information Technology">Information Technology</option>
+               <option value="Information Security">Information Security</option>
+               <option value="Digital Arts">Digital Arts</option>
+             </select>
+          </div>
+          <div class="survey-form-control">
             <label class="survey-form-control_label">Hobbies:</label>
               <label for="hobby"> <input type="checkbox" value="surfing" name="hobby" id="hobby"> Surfing</label>
               <label for="hobby"> <input type="checkbox" value="golfing" name="hobby" id="hobby"> Golfing</label>
-              <label for="hobby"> <input type="checkbox" value="motorcross" name="hobby" id="hobby"> Motorcross</label>
+              <label for="hobby"> <input type="checkbox" value="motorcross" name="hobby" id="hobby"> Motocross</label>
           </div>
           <div class="survey-form-control">
               <label class="survey-form-control_label" for="suggestion">Do you have anything to ask?</label>
